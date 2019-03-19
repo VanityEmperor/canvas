@@ -50,6 +50,7 @@ red.onclick = function(){
 green.onclick = function(){
   context.fillStyle = 'green'
   context.strokeStyle = 'green'
+  black.classList.remove('active')
   red.classList.remove('active')
   green.classList.add('active')
   blue.classList.remove('active')
@@ -57,6 +58,7 @@ green.onclick = function(){
 blue.onclick = function(){
   context.fillStyle = 'blue'
   context.strokeStyle = 'blue'
+  black.classList.remove('active')
   red.classList.remove('active')
   green.classList.remove('active')
   blue.classList.add('active')
