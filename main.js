@@ -31,11 +31,19 @@ download.onclick = function(){
   a.click()
 }
 
-
+black.onclick = function(){
+  context.fillStyle = 'black'
+  context.strokeStyle = 'black'
+  black.classList.add('active')
+  red.classList.remove('active')
+  green.classList.remove('active')
+  blue.classList.remove('active')
+}
 red.onclick = function(){
   context.fillStyle = 'red'
   context.strokeStyle = 'red'
   red.classList.add('active')
+  black.classList.remove('active')
   green.classList.remove('active')
   blue.classList.remove('active')
 }
